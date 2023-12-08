@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="todoForm">
+            <label for="titleInput " class="title">Title:</label>
+            <input type="text" class="titleInput" placeholder="Title" required>
+            <div class="checkbox-container">
+                <label for="checkboxInput" class="checkboxTitle">Completed:</label>
+                <input type="checkbox" class="checkboxInput">
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </form>
+        <div class="list-container">
+            <div class="loading">Loading...</div>
+            <ul class="todoList" style="display: none;"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
